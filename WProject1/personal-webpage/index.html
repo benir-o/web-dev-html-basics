@@ -14,131 +14,194 @@
   </head>
 
   <body>
-    <h1>My goals for the year</h1>
+    <header>
+      <h1>My goals for the year</h1>
+      <hr />
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html">Learn HTML</a>
+          </li>
+          <li><a href="#vacation">Planning a vacation</a></li>
+        </ul>
+      </nav>
+    </header>
     <hr />
-    <nav>
-      <ul>
-        <li>
-          <a href="#html">Learn HTML</a>
-        </li>
-        <li><a href="#vacation">Planning a vacation</a></li>
-      </ul>
-    </nav>
-    <section id="html">
-      <h2>I am ready to learn html</h2>
-      <p>This is my first webpage.</p>
-      <img
-        src="img/html_logo.jpg"
-        alt="HTML5 Logo"
-        title="I am learning HTML5"
-        width="300"
-        height="300"
-      />
-      <figure>
-        <figcaption>
-          An Example of HTML5 code
-          <p>
-            <code> &lt;h1&gt;Hello World&lt;/h1&gt; </code>
-          </p>
-        </figcaption>
-      </figure>
-      <h3>My daily schedule.</h3>
-      <p>Let me tell you how:</p>
-      <ol>
-        <li>... I learn more about web dev.</li>
-        <li>... I plan out my schedule.</li>
-        <li>
-          ... I use resources from
-          <abbr title="Mozilla Development Network">
-            <a href="https://developer.mozilla.org">MDN</a></abbr
-          >.
-        </li>
-      </ol>
-    </section>
-
-    <!--As a result the ordered list becomes numbered on our web page-->
-
-    <hr />
-
-    <br />
-
-    <section id="vacation">
-      <h2>I am also planning a vacation</h2>
-      <p>I've been working hard and <em>really need a getaway.</em></p>
-      <p>
-        I live in <abbr title="Nairobi">NBO</abbr> and I want to visit a beach
-      </p>
-
-      <h3>Places I'd like to visit</h3>
-      <ul>
-        <li>
-          <p>I've had good things about Cotopaxi</p>
-
+    <main>
+      <article id="html">
+        <h2>I am ready to learn html</h2>
+        <p>This is my first webpage.</p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="img/html_logo.jpg"
+            alt="HTML5 Logo"
+            title="I am learning HTML5"
+            width="300"
+            height="300"
+          />
           <figure>
-            <img
-              src="img/Cotopaxi.jpg"
-              alt="A Carribean beach"
-              title="I would like to hike here."
-              width="474"
-              height="316"
-              loading="lazy"
-            />
             <figcaption>
-              The Cotopaxi Volcano, a popular tourist attraction
+              An Example of HTML5 code
+              <p>
+                <code> &lt;h1&gt;Hello World&lt;/h1&gt; </code>
+              </p>
             </figcaption>
           </figure>
-        </li>
+        </section>
+        <section>
+          <h3>My daily schedule.</h3>
+          <p>Let me tell you how:</p>
+          <ol>
+            <li>... I learn more about web dev.</li>
+            <li>... I plan out my schedule.</li>
+            <li>
+              ... I use resources from
+              <abbr title="Mozilla Development Network">
+                <a href="https://developer.mozilla.org">MDN</a></abbr
+              >.
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>Guess the number of hours I code per day?</summary>
+              <p>
+                I start at <time datetime="08:00">8 am</time> and I write code
+                for <time datetime="PT3H">3 hours</time> every morning
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+            <tr>
+              <th>Time</th>
+              <th>Activity</th>
+            </tr>
+            <tr>
+              <td>
+                <time datetime="08:00">8 am</time>-<time datetime="11:00"
+                  >11 am</time
+                >
+              </td>
+              <td>Write Code</td>
+            </tr>
+            <tr>
+              <td>
+                <time datetime="11:00">11 am</time>-<time datetime="12:00"
+                  >12 pm</time
+                >
+              </td>
+              <td>Eat Lunch</td>
+            </tr>
+            <tr>
+              <td>
+                <time datetime="12:00">12 pm</time>-<time datetime="17:00"
+                  >5 pm</time
+                >
+              </td>
+              <td>Study for other courses</td>
+            </tr>
+            <tr>
+              <td colspan="2">Free Time</td>
+            </tr>
+          </table>
+        </section>
+      </article>
 
-        <li>
-          <p>I've heard good things about going here:</p>
-          <address>
-            Parque Nacional Cotopaxi<br />
-            Latacunga,Ecuador <em>(0°42′S, 78°24′ W) </em>
-          </address>
-        </li>
-        <li>
-          <p>I've heard good things about going here:</p>
-          <address>
-            Margaritaville Island Reserve Riviera Cancun <br />
-            Bahia Petempich Puerto Morelos, Mexico <br />
-            Colonia Morelos Mexico 77580
-          </address>
-          <figure>
-            <img
-              src="img/Margaritaville.jpg"
-              alt="Cancun vacation"
-              title="It's 5 O'clock somewhere!"
-              width="474"
-              height="316"
-              loading="lazy"
-            />
-            <figcaption>Margaritaville Island</figcaption>
-          </figure>
-        </li>
-        <!--You cannot put an address enclosed within a paragraph-->
-        <!--TODO: Add More places -->
-        <!--As a result we get bullet points in the webpage-->
-      </ul>
-      <h3>Places I want to avoid</h3>
-      <dl>
-        <dt>North Pole</dt>
-        <dd>I hear this is <strong>cold</strong>!</dd>
+      <!--As a result the ordered list becomes numbered on our web page-->
 
-        <dt>South Pole</dt>
-        <dd>This is also cold</dd>
+      <hr />
 
-        <dt>Mountain Tops</dt>
-        <dd>These are also cold</dd>
-      </dl>
-    </section>
+      <br />
+
+      <article id="vacation">
+        <h2>I am also planning a vacation</h2>
+        <p>I've been working hard and <em>really need a getaway.</em></p>
+        <p>
+          I live in <abbr title="Nairobi">NBO</abbr> and I want to visit a beach
+        </p>
+
+        <section>
+          <h3>Places I'd like to visit</h3>
+          <ul>
+            <li>
+              <p>I've had good things about Cotopaxi</p>
+
+              <figure>
+                <img
+                  src="img/Cotopaxi.jpg"
+                  alt="A Carribean beach"
+                  title="I would like to hike here."
+                  width="474"
+                  height="316"
+                  loading="lazy"
+                />
+                <figcaption>
+                  The Cotopaxi Volcano, a popular tourist attraction
+                </figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                Parque Nacional Cotopaxi<br />
+                Latacunga,Ecuador <em>(0°42′S, 78°24′ W) </em>
+              </address>
+            </li>
+            <li>
+              <p>I've heard good things about going here:</p>
+              <address>
+                Margaritaville Island Reserve Riviera Cancun <br />
+                Bahia Petempich Puerto Morelos, Mexico <br />
+                Colonia Morelos Mexico 77580
+              </address>
+              <figure>
+                <img
+                  src="img/Margaritaville.jpg"
+                  alt="Cancun vacation"
+                  title="It's 5 O'clock somewhere!"
+                  width="474"
+                  height="316"
+                  loading="lazy"
+                />
+                <figcaption>Margaritaville Island</figcaption>
+              </figure>
+            </li>
+            <!--You cannot put an address enclosed within a paragraph-->
+            <!--TODO: Add More places -->
+            <!--As a result we get bullet points in the webpage-->
+          </ul>
+        </section>
+        <!--TODO: Add more places-->
+
+        <section>
+          <h3>Places I want to avoid</h3>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>cold</strong>!</dd>
+
+            <dt>South Pole</dt>
+            <dd>This is also cold</dd>
+
+            <dt>Mountain Tops</dt>
+            <dd>These are also cold</dd>
+          </dl>
+        </section>
+      </article>
+    </main>
 
     <!--The description term is on the left, while the description definition should
         be on the right-->
 
     <hr />
-    &lt;&lt;&lt; &copy; <a href="about.html">Benir Odeny</a> &gt;&gt;&gt;
-    <p>
-      <a href="#">Back to top</a>
-    </p>
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Benir Odeny</a> &gt;&gt;&gt;
+      </p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
   </body>
 </html>
