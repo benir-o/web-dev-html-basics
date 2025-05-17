@@ -1,0 +1,16 @@
+a {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
+a:visited {
+    color: purple;
+}
+table, tr, th, td, caption {
+    border: 1px solid #a11919;
+    font-family: 'Courier New',Courier, monspace;
+    border-collapse: collapse;
+    padding:0.5rem;
+}

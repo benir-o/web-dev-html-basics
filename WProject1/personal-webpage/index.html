@@ -235,15 +235,14 @@
               />
             </p>
             <p>
-              <label for="lastName">Last Name: </label>
+              <label for="lastname">Last Name: </label>
               <input
                 type="text"
                 name="lastName"
-                id="lastName"
+                id="lastname"
                 placeholder="Doe"
                 autocomplete="on"
                 required
-                autofocus
               />
             </p>
             <p>
@@ -355,6 +354,13 @@
           </fieldset>
           <br />
           <button type="submit">submit</button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            post
+          </button>
           <button type="reset">Reset</button>
         </form>
       </article>
