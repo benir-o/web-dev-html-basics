@@ -9,7 +9,7 @@ a:visited {
     color: purple;
 }
 table, tr, th, td, caption {
-    border: 1px solid #a11919;
+    border: 2px solid #060f93;
     font-family: 'Courier New',Courier, monspace;
     border-collapse: collapse;
     padding:0.5rem;
