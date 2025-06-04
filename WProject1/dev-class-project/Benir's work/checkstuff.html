@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Token Management Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      input[type="number"],
+      input[type="text"] {
+        padding: 8px;
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Token Services</h1>
+
+      <!-- Check Tokens -->
+      <form action="/check-tokens" method="GET">
+        <h3>Check Token Balance</h3>
+        <label for="userId">User ID:</label>
+        <input type="text" name="userId" id="userId" required />
+        <button type="submit">Check Tokens</button>
+      </form>
+
+      <!-- Buy Tokens -->
+      <form action="/buy-tokens" method="POST">
+        <h3>Buy Tokens</h3>
+        <label for="userIdBuy">User ID:</label>
+        <input type="text" name="userId" id="userIdBuy" required />
+
+        <label for="amount">Amount of Tokens:</label>
+        <input type="number" name="amount" id="amount" required min="1" />
+
+        <button type="submit">Buy Tokens</button>
+      </form>
+
+      <!-- Check Payment History -->
+      <form action="/payment-history" method="GET">
+        <h3>View Payment History</h3>
+        <label for="userIdHistory">User ID:</label>
+        <input type="text" name="userId" id="userIdHistory" required />
+        <button type="submit">View History</button>
+      </form>
+    </div>
+  </body>
+</html>
