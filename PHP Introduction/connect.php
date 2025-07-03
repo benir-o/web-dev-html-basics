@@ -1,6 +1,6 @@
 <?php
 // Database credentials
-$host = "localhost";      // Replace if using a remote server
+$host = "127.0.0.1";      // Replace if using a remote server
 $username = "root";       // Default XAMPP/WAMP username
 $password = "";           // Default XAMPP/WAMP password (empty)
 $database = "base_data_1"; // Replace with your database name
@@ -9,9 +9,9 @@ $database = "base_data_1"; // Replace with your database name
 $conn = mysqli_connect($host, $username, $password, $database);
 
 // Check connection
-if ($conn) {
+if (!$conn) {
     //die("Connection failed: " . mysqli_connect_error());
-    echo "You are connected";
-} else {
     echo "Could not connect";
+} else {
+    echo "You are connected";
 }
