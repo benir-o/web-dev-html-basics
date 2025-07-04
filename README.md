@@ -1,6 +1,7 @@
 # 🔰Dragon Repeller Game
 
 A simple browser-based role-playing game (RPG) built with HTML, CSS, and JavaScript. Your quest: defeat the dragon that is preventing people from leaving the town!
+Checkout the `FreeCodeCamp` repository for the source code.
 
 ## Features
 
