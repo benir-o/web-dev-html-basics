@@ -3,11 +3,13 @@
 $host = "localhost";      // Replace if using a remote server
 $username = "root";       // Default XAMPP/WAMP username
 $password = "Kenya254";
-//$database = "company_db_2";           // Default XAMPP/WAMP password (empty)
+$database = "company_db_2";           // Default XAMPP/WAMP password (empty)
 // Replace with your database name
+//Password: Kenya254
+// http://localhost/web-dev-html-basics/PHP-Introduction/connect.php
 
 // Create connection
-$conn = mysqli_connect($host, $username, $password);
+$conn = mysqli_connect($host, $username, $password, $database);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
